@@ -1,0 +1,64 @@
+/* უნივერსალური სტილი ყველა ელემენტისთვის არის (*) */
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ყველა ელემენტს მითითებული საზღვრები */
+}
+
+body {
+    font-family: Arial, sans-serif; /* შრიფტის ტიპი */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center; 
+    padding: 16px; /* შეცვლილია 1em 16px-ით */
+}
+
+nav ul {
+    list-style: none; /* სიის სტილის ამოშლა */
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* ლინკის ქვეშ ხაზი */
+    padding: 8px 16px; /* შეცვლილია 0.5em 1em 8px 16px-ით */
+    display: inline-block; /* ელემენტი, რომელიც ინარჩუნებს თავის ფორმას */
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50; /* ფონი ლინკზე გადასვლისას */
+}
+
+main {
+    padding: 16px; /* შეცვლილია 1em 16px-ით */
+    background-color: white;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 800px; /* მაქსიმალური სიგანე */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px; /* შეცვლილია 1em 16px-ით */
+    position: absolute; /* ელემენტი პოზიციონირდება მშობლის მიმართ */
+    width: 100%; /* სიგანე 100%-ია მშობელი ელემენტის */
+    bottom: 0;  /* ქვედა საზღვარი 0 პოზიციაზე */
+}
